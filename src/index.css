@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+	scroll-behavior: smooth;
+}
+body {
+	color: white;
+}
+.section {
+}
+.main-heading {
+	@apply text-6xl font-bold;
+}
+.link {
+	@apply text-text transition duration-300 font-semibold hover:bg-hoverColor uppercase py-2 px-3 rounded-md;
+}
+
+.rig {
+	animation: rig 0.8s infinite alternate linear;
+}
+@keyframes rig {
+	from {
+		transform: translateY(5px);
+	}
+	to {
+		transform: translateY(-5px);
+	}
+}
