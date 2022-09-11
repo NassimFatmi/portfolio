@@ -1,27 +1,26 @@
 import React from "react";
 import {
-	Navbar,
-	Home,
-	About,
-	Skills,
-	Projects,
-	Contact,
-	Footer,
-} from "./components";
+	BrowserRouter as Router,
+	Switch,
+	Route,
+	Link
+} from "react-router-dom";
+import { MainView, FlutterView } from "./pages";
 
 const App = () => {
 	return (
-		<div className="app bg-primary">
-			<Navbar />
-			<div className="container">
-				<Home />
-				<About />
-				<Skills />
-				<Projects />
-				<Contact />
-				<Footer />
+		<Router>
+			<div className="app bg-primary">
+				<Switch>
+					<Route path="/" exact>
+						<MainView />
+					</Route>
+					<Route path="/flutter">
+						<FlutterView />
+					</Route>
+				</Switch>
 			</div>
-		</div>
+		</Router>
 	);
 };
 

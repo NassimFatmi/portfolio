@@ -21,6 +21,7 @@ module.exports = {
 				textAlt: "#777",
 				bg: "#F9F9F9",
 				hoverColor: "#434343",
+				flutter: colors.blue
 			},
 			fontSize: {
 				xxx: "35rem",

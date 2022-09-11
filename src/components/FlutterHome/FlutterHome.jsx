@@ -1,34 +1,30 @@
 import React from "react";
-import { ArrowBtn } from "../../widgets/custom";
-import Landing from "../../assets/landing.png";
 import { socials } from "../../content/content";
-const Home = () => {
+import Flutter from "../../assets/flutter.png";
+import { ArrowBtn } from "../../widgets/custom";
+
+function FlutterHome() {
 	return (
 		<div className="h-screen" id="home">
-			<div className="absolute top-1/2 left-1/2 transform h-80 w-80 md:h-120 md:w-120 -translate-x-1/2 -translate-y-1/2 bg-hoverColor rounded-full"></div>
 			<div className="relative grid md:grid-cols-2 h-full place-content-center">
-				<div className="md:order-2 flex justify-center relative">
-					<div
-						className="absolute left-auto top-1/2 transform text-6xl md:text-xxx"
-						style={{ lineHeight: "0" }}
-					>
-						X
-					</div>
+				<div className="mt-10 sm:mt-0 flex mx-auto justify-center relative bg-white rounded-full w-56 h-56 sm:w-96 sm:h-96">
 					<img
-						className="rig w-1/2 object-contain"
+						className="rig w-24 sm:w-48 object-contain mr-7 sm:mr-10"
 						style={{ position: "relative", zIndex: "10" }}
-						src={Landing}
+						src={Flutter}
 						alt="landingimage"
 					/>
 				</div>
 				<div className="flex flex-col	justify-center items-start text-center md:text-left">
-					<h2 className="main-heading mb-5">Creative software developer.</h2>
-					<p className="text-pColor mb-10">
-						Hi i'am Nassim Fatmi. A passionate Fullstack Developer based in
-						Algeria
+					<h2 className="main-heading mb-5">
+						Cross-platform apps with Flutter.
+					</h2>
+					<p className="mb-10">
+						I create cross-platform applications for both mobile operating
+						systems IOS/Android, with two years of experience.
 					</p>
 					<a href="#projects">
-						<ArrowBtn text="See my work" />
+						<ArrowBtn circleColor="bg-blue-400" text="See my work" />
 					</a>
 					<div className="mt-10 flex justify-center md:justify-start w-full">
 						{socials.map((link) => {
@@ -50,6 +46,6 @@ const Home = () => {
 			</div>
 		</div>
 	);
-};
+}
 
-export default Home;
+export default FlutterHome;

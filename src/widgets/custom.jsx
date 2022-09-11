@@ -1,10 +1,12 @@
 import React from "react";
 import { AiOutlineArrowRight } from "react-icons/ai";
 
-export const ArrowBtn = ({ handler, text }) => {
+export const ArrowBtn = ({ handler, text, circleColor = "bg-hoverColor" }) => {
 	return (
 		<button className="flex items-center relative" onClick={handler}>
-			<span className="absolute left-0 h-10 w-10 bg-hoverColor rounded-full"></span>
+			<span
+				className={`absolute left-0 h-10 w-10 ${circleColor} rounded-full`}
+			></span>
 			<span className="z-10 mx-2 uppercase">{text}</span>{" "}
 			<AiOutlineArrowRight />
 		</button>

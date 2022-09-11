@@ -11,18 +11,23 @@ import {
 	SiTailwindcss,
 	SiJavascript,
 	SiReact,
-	SiNodeDotJs,
+	SiNodedotjs,
 	SiMongodb,
 	SiGit,
 	SiFlutter,
 	SiDart,
 	SiAdobeaftereffects,
-	SiAdobepremiere,
+	SiAdobepremierepro,
+	SiPython,
+	SiExpress
 } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
 import chattapp from "../assets/chattapp.png";
 import crypto from "../assets/crypto.png";
 import memories from "../assets/memories.png";
+import karini from "../assets/karini.png";
+import freeclass from "../assets/freeclass.png";
+import vidvet from "../assets/vidvet.png";
 
 export const socials = [
 	{
@@ -49,7 +54,7 @@ export const frontDevSkills = [
 	},
 
 	{
-		name: "EXPRESS",
+		name: "CSS",
 		icon: DiCss3,
 	},
 	{
@@ -64,22 +69,26 @@ export const frontDevSkills = [
 		name: "ReactJS",
 		icon: SiReact,
 	},
+	{
+		name: "Flutter",
+		icon: SiFlutter,
+	},
 ];
 
 export const backDevSkills = [
 	{
 		name: "NodeJs",
-		icon: SiNodeDotJs,
+		icon: SiNodedotjs,
 	},
-
+	{
+		name: "ExpressJs",
+		icon: SiExpress,
+	},
 	{
 		name: "MongoDB",
 		icon: SiMongodb,
 	},
-	{
-		name: "Flutter",
-		icon: SiFlutter,
-	},
+
 	{
 		name: "Dart",
 		icon: SiDart,
@@ -87,6 +96,10 @@ export const backDevSkills = [
 	{
 		name: "Git",
 		icon: SiGit,
+	},
+	{
+		name: "Python",
+		icon: SiPython,
 	},
 ];
 
@@ -97,7 +110,7 @@ export const motionSkills = [
 	},
 	{
 		name: "Premiere Pro",
-		icon: SiAdobepremiere,
+		icon: SiAdobepremierepro,
 	},
 ];
 
@@ -138,6 +151,44 @@ export const projects = [
 	},
 ];
 
+export const flutterProjects = [
+	{
+		name: "Dars Delivery (ex: Karini - قريني)",
+		app: "https://play.google.com/store/apps/details?id=dz.createch.karini",
+		image: karini,
+		overview: "dars delivery is an app that link students with teachers to do online sessions through a google meet link or in person sessions by setting the location of the teacher using google maps , it also help them communicate through chat.",
+		libs: [
+			"Dart",
+			"Flutter",
+			"Provider",
+			"Intl",
+			"Google Maps",
+		],
+	},
+	{
+		name: "Freeclass",
+		image: freeclass,
+		overview: "Freeclasse is a solution that helps students find teachers and do online sessions to help them improve their studies.",
+		libs: [
+			"Dart",
+			"Flutter",
+			"Provider",
+			"Intl",
+		],
+	},
+	{
+		name: "Vidvet",
+		image: vidvet,
+		overview: "Vidvet is an online market for brand new and used clothes.",
+		libs: [
+			"Dart",
+			"Flutter",
+			"Provider",
+			"Intl",
+		],
+	},
+];
+
 export const contacts = [
 	{
 		contact: "in_fatmi@esi.dz",
@@ -148,6 +199,7 @@ export const contacts = [
 		icon: AiFillPhone,
 	},
 ];
+
 
 export const allSocials = [
 	...socials,
