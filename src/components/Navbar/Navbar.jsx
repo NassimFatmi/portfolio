@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { FaAffiliatetheme } from "react-icons/fa";
+import { FaAffiliatetheme, FaFileDownload } from "react-icons/fa";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RiFlutterFill } from "react-icons/ri";
 import { SiJavascript } from "react-icons/si";
@@ -96,6 +96,14 @@ const Navbar = ({ bgColor, showFlutter = true }) => {
 						</Link>
 					</li>
 				)}
+				<li key={"CV"} className="block">
+					<a className="link block" href="/assets/CV.pdf" download>
+						<div className="flex items-center gap-2">
+							<FaFileDownload />
+							<span>CV</span>
+						</div>
+					</a>
+				</li>
 			</ul>
 		</nav>
 	);
