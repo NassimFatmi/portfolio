@@ -195,6 +195,10 @@ export const contacts = [
 		icon: AiOutlineMail,
 	},
 	{
+		contact: "fatminsm@gmail.com",
+		icon: AiOutlineMail,
+	},
+	{
 		contact: "+213790016786",
 		icon: AiFillPhone,
 	},
