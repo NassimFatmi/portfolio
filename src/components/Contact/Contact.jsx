@@ -27,7 +27,7 @@ const Contact = () => {
 						return (
 							<div
 								key={contact.contact}
-								className="link text-white flex items-center"
+								className="contactLink text-white flex items-center"
 								rel="noreferrer noopener"
 							>
 								<contact.icon />
