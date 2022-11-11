@@ -72,7 +72,7 @@ const Navbar = ({ bgColor, showFlutter = true }) => {
 					  ))
 					: flutterLinks.map((link) => (
 							<li key={link.to} className="block">
-								<a className="link block" href={link.to}>
+								<a className="link block blueHover" href={link.to}>
 									{link.link}
 								</a>
 							</li>
@@ -97,7 +97,11 @@ const Navbar = ({ bgColor, showFlutter = true }) => {
 					</li>
 				)}
 				<li key={"CV"} className="block">
-					<a className="link block" href="/assets/CV.pdf" download>
+					<a
+						className={`link block ${!showFlutter ? "blueHover" : ""}`}
+						href="/assets/CV.pdf"
+						download
+					>
 						<div className="flex items-center gap-2">
 							<FaFileDownload />
 							<span>CV</span>

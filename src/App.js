@@ -5,6 +5,7 @@ import {
 	Route,
 } from "react-router-dom";
 import { MainView, FlutterView } from "./pages";
+import "animate.css";
 
 const App = () => {
 	return (

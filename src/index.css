@@ -29,6 +29,10 @@ body {
 	scale: 1;
 }
 
+.blueHover {
+	@apply hover:bg-blue-700;
+}
+
 .flutterLink:hover,
 .mainLink:hover {
 	scale: 1.1;

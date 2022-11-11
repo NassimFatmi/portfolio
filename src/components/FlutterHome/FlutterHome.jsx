@@ -16,22 +16,38 @@ function FlutterHome() {
 					/>
 				</div>
 				<div className="flex flex-col	justify-center items-start text-center md:text-left">
-					<h2 className="main-heading mb-5">
+					<h2 className="main-heading mb-5 animate__animated animate__fadeIn">
 						Cross-platform apps with Flutter.
 					</h2>
-					<p className="mb-10">
+					<p
+						className="mb-10 animate__animated animate__fadeIn"
+						style={{
+							animationDelay: "300ms",
+						}}
+					>
 						I create cross-platform applications for both mobile operating
 						systems IOS/Android, with two years of experience.
 					</p>
-					<a href="#projects">
-						<ArrowBtn circleColor="bg-blue-400" text="See my work" />
+					<a
+						href="#projects"
+						className="animate__animated animate__fadeIn"
+						style={{
+							animationDelay: "500ms",
+						}}
+					>
+						<ArrowBtn text="See my work" circleColor="bg-blue-700" />
 					</a>
-					<div className="mt-10 flex justify-center md:justify-start w-full">
+					<div
+						className="mt-10 flex justify-center md:justify-start w-full animate__animated animate__fadeIn"
+						style={{
+							animationDelay: "500ms",
+						}}
+					>
 						{socials.map((link) => {
 							return (
 								<a
 									key={link.name}
-									className="link text-white flex items-center"
+									className="link blueHover text-white flex items-center"
 									href={link.url}
 									rel="noreferrer noopener"
 									target="_blank"

@@ -15,22 +15,40 @@ const Home = () => {
 						X
 					</div>
 					<img
-						className="rig w-1/2 object-contain"
+						className="w-1/2 object-contain rig"
 						style={{ position: "relative", zIndex: "10" }}
 						src={Landing}
 						alt="landingimage"
 					/>
 				</div>
 				<div className="flex flex-col	justify-center items-start text-center md:text-left">
-					<h2 className="main-heading mb-5">Creative software developer.</h2>
-					<p className="text-pColor mb-10">
+					<h2 className="main-heading mb-5 animate__animated animate__fadeIn">
+						Creative software developer.
+					</h2>
+					<p
+						className="text-pColor mb-10 animate__animated animate__fadeIn"
+						style={{
+							animationDelay: "300ms",
+						}}
+					>
 						Hi i'am Nassim Fatmi. A passionate Fullstack Developer based in
 						Algeria
 					</p>
-					<a href="#projects">
+					<a
+						href="#projects"
+						className="animate__animated animate__fadeIn"
+						style={{
+							animationDelay: "500ms",
+						}}
+					>
 						<ArrowBtn text="See my work" />
 					</a>
-					<div className="mt-10 flex justify-center md:justify-start w-full">
+					<div
+						className="mt-10 flex justify-center md:justify-start w-full animate__animated animate__fadeIn"
+						style={{
+							animationDelay: "500ms",
+						}}
+					>
 						{socials.map((link) => {
 							return (
 								<a
