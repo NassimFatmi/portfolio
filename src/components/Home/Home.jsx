@@ -5,11 +5,16 @@ import { socials } from "../../content/content";
 const Home = () => {
 	return (
 		<div className="h-screen" id="home">
-			<div className="absolute top-1/2 left-1/2 transform h-80 w-80 md:h-120 md:w-120 -translate-x-1/2 -translate-y-1/2 bg-hoverColor rounded-full"></div>
+			<div
+				className="absolute top-1/2 left-1/2 transform h-60 w-60 md:h-120 md:w-120 -translate-x-1/2 -translate-y-1/2 bg-hoverColor rounded-full opacity-80"
+				style={{
+					boxShadow: "rgb(255 255 255 / 30%) 0px 0px 40px 6px",
+				}}
+			></div>
 			<div className="relative grid md:grid-cols-2 h-full place-content-center">
 				<div className="md:order-2 flex justify-center relative">
 					<div
-						className="absolute left-auto top-1/2 transform text-6xl md:text-xxx"
+						className="absolute left-auto top-1/2 transform text-6xl hidden md:text-xxx md:visible"
 						style={{ lineHeight: "0" }}
 					>
 						X

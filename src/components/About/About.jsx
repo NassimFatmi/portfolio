@@ -3,6 +3,9 @@ import { ObjectLayout } from "../../widgets/custom";
 import Profile from "../../assets/profile.jpg";
 import Blob from "../../assets/blob.png";
 import TrackVisibility from "react-on-screen";
+import { GoDatabase } from "react-icons/go";
+import { MdOutlineWeb } from "react-icons/md";
+import { BsStack } from "react-icons/bs";
 
 const About = () => {
 	return (
@@ -34,6 +37,40 @@ const About = () => {
 									person, technologies enthusiast and fast self learner, In love
 									with perfection.
 								</p>
+								<ul
+									className={`mt-10 grid grid-cols-1 md:grid-cols-3 items-center animate__animated ${
+										isVisible ? "animate__fadeIn opacity-100" : "opacity-0"
+									}`}
+									style={{
+										animationDelay: "600ms",
+									}}
+								>
+									<li>
+										<article className="flex flex-col items-center mb-5">
+											<MdOutlineWeb size={50} />
+											<p className="text-center mt-3">
+												I create user interfaces for both WEB and MOBILE
+												applications (Frontend)
+											</p>
+										</article>
+									</li>
+									<li>
+										<article className="flex flex-col items-center mb-5">
+											<GoDatabase size={50} />
+											<p className="text-center mt-3">
+												I do databases design and i create API's (Backend)
+											</p>
+										</article>
+									</li>
+									<li>
+										<article className="flex flex-col items-center mb-5">
+											<BsStack size={50} />
+											<p className="text-center mt-3">
+												I do the databases design and i create API's (Backend)
+											</p>
+										</article>
+									</li>
+								</ul>
 							</div>
 						)}
 					</TrackVisibility>

@@ -23,11 +23,12 @@ import {
 } from "react-icons/si";
 import { DiCss3 } from "react-icons/di";
 import chattapp from "../assets/chattapp.png";
-import crypto from "../assets/crypto.png";
+import ytbanalyser from "../assets/ytbanalyser.png";
 import memories from "../assets/memories.png";
 import karini from "../assets/karini.png";
 import freeclass from "../assets/freeclass.png";
 import vidvet from "../assets/vidvet.png";
+import adsil from "../assets/adsil.png";
 
 export const socials = [
 	{
@@ -142,12 +143,20 @@ export const projects = [
 		technologies: ["React", "Node", "express", "html", "css", "js", "mongodb"],
 	},
 	{
-		name: "Crypto World",
-		code: "https://github.com/NassimFatmi/cryptocurreny-application",
-		live: "https://cryptocurrencies-world.netlify.app/",
-		image: crypto,
-		overview: "Visualize latest Cryptocurrencies news and exchanges.",
-		technologies: ["React", "html", "css", "js", "RapidAPI", "Tailwind"],
+		name: "Youtube Comments Analyzer",
+		code: "https://github.com/NassimFatmi/hackit-solution",
+		live: "https://chupakabra.netlify.app/",
+		image: ytbanalyser,
+		overview: "A third place winning prize on an AI hackathon organized in Algiers by the CSE club. The solution we proposed consists of browser extension that detects youtube videos and make a sentiment analysis on it and display some statistics along with its polarity.",
+		technologies: ["React", "Flask", "Python", "js", "Google Charts", "Tailwind"],
+	},
+	{
+		name: "ADSIL Website",
+		// code: "",
+		live: "https://adsil.netlify.app/",
+		image: adsil,
+		overview: "This is a website made during summer internship for a multiservice company called Adsil which is based in Algiers-Algeria. However the github repo for this project is private.",
+		technologies: ["React", "Tailwind"],
 	},
 ];
 

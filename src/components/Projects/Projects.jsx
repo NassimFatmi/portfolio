@@ -37,7 +37,6 @@ const Projects = () => {
 									className={`border rounded-md overflow-hidden animate__animated ${
 										isVisible ? "animate__zoomIn opacity-100" : "opacity-0"
 									}`}
-									style={{ animationDelay: "200ms" }}
 								>
 									<img className="w-full" src={project.image} alt="chattapp" />
 									<div className="text-center flex flex-col justify-between">

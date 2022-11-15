@@ -7,6 +7,7 @@ import { Link } from "react-router-dom";
 
 const Navbar = ({ bgColor, showFlutter = true }) => {
 	const [showMenu, setShowMenu] = useState(false);
+	const [darkenBg, setDarkenBg] = useState(false);
 	const flutterLinks = [
 		{
 			to: "#home",
@@ -40,13 +41,23 @@ const Navbar = ({ bgColor, showFlutter = true }) => {
 			link: "Contact",
 		},
 	];
+
+	const updateBg = () => {
+		if (window.scrollY > 40) setDarkenBg(false);
+		else setDarkenBg(true);
+	};
 	useEffect(() => {
-		window.addEventListener("scroll", () => {});
-		return () => {};
+		window.addEventListener("scroll", updateBg);
+		return () => {
+			window.removeEventListener("scroll", updateBg);
+		};
 	}, []);
+
 	return (
 		<nav
-			className={`${bgColor} z-20 fixed top-0 left-0 w-full flex items-center justify-between px-10 py-4`}
+			className={`${
+				darkenBg ? "" : bgColor
+			} z-20 fixed top-0 left-0 w-full flex items-center justify-between px-10 py-4`}
 		>
 			<div>
 				<FaAffiliatetheme size="2.5rem" color="white" />
