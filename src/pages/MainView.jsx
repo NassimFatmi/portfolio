@@ -7,6 +7,7 @@ import {
 	Projects,
 	Contact,
 	Footer,
+	Blogs,
 } from "../components";
 
 function MainView() {
@@ -18,6 +19,7 @@ function MainView() {
 				<About />
 				<Skills />
 				<Projects />
+				<Blogs />
 				<Contact />
 				<Footer />
 			</div>

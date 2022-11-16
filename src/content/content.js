@@ -232,3 +232,12 @@ export const allSocials = [
 		icon: AiFillCodepenCircle,
 	},
 ];
+
+export const blogs = [
+	{
+		image: "https://miro.medium.com/max/828/1*5n_1gQOx1_a6o8T00No6GQ.png",
+		title: "Create a nested navigation system in Flutter",
+		resume: "In this article i explain the best way to create a navigation system in flutter using bottom nav bar widget",
+		link: "https://medium.com/@in_fatmi/create-a-nested-navigation-system-in-flutter-cf7598fef767",
+	}
+]
