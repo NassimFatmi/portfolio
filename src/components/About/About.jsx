@@ -66,7 +66,7 @@ const About = () => {
 										<article className="flex flex-col items-center mb-5">
 											<BsStack size={50} />
 											<p className="text-center mt-3">
-												I do the databases design and i create API's (Backend)
+												I create fullstack applications (Fullstack)
 											</p>
 										</article>
 									</li>
