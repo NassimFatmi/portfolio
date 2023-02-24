@@ -1,11 +1,10 @@
 import React from "react";
-import { socials } from "../../content/content";
 import Flutter from "../../assets/flutter.png";
 import { ArrowBtn } from "../../widgets/custom";
 
 function FlutterHome() {
 	return (
-		<div className="h-screen" id="home">
+		<div className="h-screen" id="flutter-home">
 			<div className="relative grid md:grid-cols-2 h-full place-content-center">
 				<div
 					className="mt-10 sm:mt-0 flex mx-auto justify-center relative bg-white rounded-full w-56 h-56 sm:w-96 sm:h-96"
@@ -42,7 +41,7 @@ function FlutterHome() {
 					>
 						<ArrowBtn text="See my work" circleColor="bg-blue-700" />
 					</a>
-					<div
+					{/* <div
 						className="mt-10 flex justify-center md:justify-start w-full animate__animated animate__fadeIn"
 						style={{
 							animationDelay: "500ms",
@@ -62,7 +61,7 @@ function FlutterHome() {
 								</a>
 							);
 						})}
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</div>

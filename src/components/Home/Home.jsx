@@ -28,7 +28,7 @@ const Home = () => {
 				</div>
 				<div className="flex flex-col	justify-center items-start text-center md:text-left">
 					<h2 className="main-heading mb-5 animate__animated animate__fadeIn">
-						Creative software developer.
+						Creative Software Engineer.
 					</h2>
 					<p
 						className="text-pColor mb-10 animate__animated animate__fadeIn"
@@ -36,8 +36,8 @@ const Home = () => {
 							animationDelay: "300ms",
 						}}
 					>
-						Hi i'am Nassim Fatmi. A passionate Fullstack Developer based in
-						Algeria
+						Hi i'am Nassim FATMI. Passionate Software Engineer & Fullstack
+						Developer based in Algeria
 					</p>
 					<a
 						href="#projects"

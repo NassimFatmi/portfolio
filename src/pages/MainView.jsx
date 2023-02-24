@@ -9,6 +9,7 @@ import {
 	Footer,
 	Blogs,
 } from "../components";
+import FlutterView from "./FlutterView";
 
 function MainView() {
 	return (
@@ -19,6 +20,9 @@ function MainView() {
 				<About />
 				<Skills />
 				<Projects />
+			</div>
+			<FlutterView />
+			<div className="container">
 				<Blogs />
 				<Contact />
 				<Footer />

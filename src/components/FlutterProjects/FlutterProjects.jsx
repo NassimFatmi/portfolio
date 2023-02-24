@@ -6,7 +6,7 @@ import TrackVisibility from "react-on-screen";
 
 function FlutterProjects() {
 	return (
-		<div id="projects">
+		<div id="flutter-projects">
 			<ObjectLayout title="Projects">
 				<TrackVisibility once>
 					{({ isVisible }) => (
@@ -47,8 +47,10 @@ function FlutterProjects() {
 									<p>
 										<strong>Libs: </strong>
 										{"[ "}
-										{project.libs.map((tech) => (
-											<span className="text-pColor">{tech + ", "}</span>
+										{project.libs.map((tech, index) => (
+											<span key={index} className="text-pColor">
+												{tech + ", "}
+											</span>
 										))}
 										{" ]"}
 									</p>

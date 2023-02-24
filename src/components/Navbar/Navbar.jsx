@@ -2,8 +2,6 @@ import React, { useEffect, useState } from "react";
 import { FaAffiliatetheme, FaFileDownload } from "react-icons/fa";
 import { AiOutlineMenu } from "react-icons/ai";
 import { RiFlutterFill } from "react-icons/ri";
-import { SiJavascript } from "react-icons/si";
-import { Link } from "react-router-dom";
 
 const Navbar = ({ bgColor, showFlutter = true }) => {
 	const [showMenu, setShowMenu] = useState(false);
@@ -43,9 +41,10 @@ const Navbar = ({ bgColor, showFlutter = true }) => {
 	];
 
 	const updateBg = () => {
-		if (window.scrollY > 40) setDarkenBg(false);
-		else setDarkenBg(true);
+		if (window.scrollY > 40) setDarkenBg(true);
+		else setDarkenBg(false);
 	};
+
 	useEffect(() => {
 		window.addEventListener("scroll", updateBg);
 		return () => {
@@ -56,8 +55,11 @@ const Navbar = ({ bgColor, showFlutter = true }) => {
 	return (
 		<nav
 			className={`${
-				darkenBg ? "" : bgColor
+				!darkenBg ? "" : bgColor
 			} z-20 fixed top-0 left-0 w-full flex items-center justify-between px-10 py-4`}
+			style={{
+				transition: "all 0.5s",
+			}}
 		>
 			<div>
 				<FaAffiliatetheme size="2.5rem" color="white" />
@@ -88,7 +90,7 @@ const Navbar = ({ bgColor, showFlutter = true }) => {
 								</a>
 							</li>
 					  ))}
-				{showFlutter ? (
+				{/* {showFlutter ? (
 					<li key={"flutter"} className="block">
 						<Link className="flutterLink block" to="/flutter">
 							<div className="flex items-center gap-2">
@@ -106,7 +108,16 @@ const Navbar = ({ bgColor, showFlutter = true }) => {
 							</div>
 						</Link>
 					</li>
-				)}
+				)} */}
+
+				<li key={"flutter"} className="block">
+					<a className="flutterLink block" href="#flutter">
+						<div className="flex items-center gap-2">
+							<RiFlutterFill />
+							<span>flutter</span>
+						</div>
+					</a>
+				</li>
 				<li key={"CV"} className="block">
 					<a
 						className={`link block ${!showFlutter ? "blueHover" : ""}`}

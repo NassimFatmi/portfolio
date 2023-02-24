@@ -8,7 +8,8 @@ const Footer = () => {
 			<span className="mx-2">
 				<AiFillHeart color="red" />
 			</span>
-			by <strong className="mx-2">Nassim Fatmi</strong> &copy; 2022
+			by <strong className="mx-2">Nassim Fatmi</strong> &copy;{" "}
+			{new Date().getFullYear()}
 		</div>
 	);
 };
