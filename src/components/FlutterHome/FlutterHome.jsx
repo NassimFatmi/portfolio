@@ -7,13 +7,13 @@ function FlutterHome() {
 		<div className="h-screen" id="flutter-home">
 			<div className="relative grid md:grid-cols-2 h-full place-content-center">
 				<div
-					className="mt-10 sm:mt-0 flex mx-auto justify-center relative bg-white rounded-full w-56 h-56 sm:w-96 sm:h-96"
+					className="mt-10 sm:mt-0 flex mx-auto justify-center relative bg-white rounded-full w-56 h-56 md:w-72 md:h-72 lg:w-96 lg:h-96"
 					style={{
 						boxShadow: "rgb(255 255 255 / 50%) 0px 0px 40px 6px",
 					}}
 				>
 					<img
-						className="rig w-24 sm:w-48 object-contain mr-7 sm:mr-10"
+						className="rig w-24 lg:w-48 md:w-36 object-contain mr-7 sm:mr-10"
 						style={{ position: "relative", zIndex: "10" }}
 						src={Flutter}
 						alt="landingimage"
