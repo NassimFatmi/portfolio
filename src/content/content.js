@@ -43,7 +43,7 @@ export const socials = [
 	},
 	{
 		name: "Linkedin",
-		url: "www.linkedin.com/in/NassimFatmi",
+		url: "https://www.linkedin.com/in/nassimfatmi",
 		icon: FaLinkedin,
 	},
 ];
@@ -200,15 +200,11 @@ export const flutterProjects = [
 
 export const contacts = [
 	{
-		contact: "in_fatmi@esi.dz",
-		icon: AiOutlineMail,
-	},
-	{
 		contact: "fatminsm@gmail.com",
 		icon: AiOutlineMail,
 	},
 	{
-		contact: "+213790016786",
+		contact: "+33 744401840",
 		icon: AiFillPhone,
 	},
 ];
